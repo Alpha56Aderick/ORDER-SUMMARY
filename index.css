@@ -1,0 +1,100 @@
+ *{
+    box-sizing: border-box;
+    padding: 0;
+ }
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+/* The card*/
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 0.75rem ;
+    max-height: 550px;
+    
+}
+ /* Image section*/
+ .imgCard{
+    height: fit-content;
+
+ }
+ .Image{
+   width: 100%;
+   align-self: flex-start;
+   object-fit: cover;
+   border-radius: 0.75rem 0.75rem 0rem 0rem;
+   
+ }
+ .contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+/* Descriptions   */
+h1{
+    margin: 0.5rem;
+}
+.welcome{
+    padding:0rem 1.5rem 0rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ /* plan */
+.audioCrd{
+    background-color: antiquewhite;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;   
+    width: 100%;    
+}
+.audIcon{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.75rem;
+}
+
+.myPlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;  
+}
+.change{
+    text-align: end;   
+}
+
+/* Options */
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.75rem;
+    padding-bottom: 1.25rem;
+}
+.proceed{
+    padding: 0.75rem;
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0.5rem 3.5rem 0.5rem 3.5rem;
+    border-radius: 0.5rem;
+}
+.cancel{
+    background-color: white;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+}
