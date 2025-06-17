@@ -1,18 +1,31 @@
- *{
+/* Import Red Hat Display font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* Reset and base styles */
+* {
     box-sizing: border-box;
     padding: 0;
- }
-body{
-    background-color: aqua;
+    margin: 0; /* Added for full reset */
+}
+
+/* Body styles: background and typography */
+body {
+    background-color: hsl(225, 100%, 94%); /* Changed to Pale blue from style guide */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /* Ensures vertical centering */
     padding: 2.5rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px; /* Paragraph size from style guide */
+    font-weight: 500; /* Default weight */
+    color: hsl(223, 47%, 23%); /* Dark blue for text */
 }
+
 /* The card*/
 .card{
-    background-color: white;
+    background-color: hsl(225, 100%, 98%); /* Very pale blue */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,63 +33,87 @@ body{
     width: 100%;
     max-width: 360px;
     border-radius: 0.75rem ;
-    max-height: 550px;
-    
+    box-shadow: 0 8px 24px hsla(223, 47%, 23%, 0.08); /* Subtle shadow */
+    overflow: hidden;
 }
- /* Image section*/
- .imgCard{
-    height: fit-content;
 
+/* Image section*/
+.imgCard{
+    width: 100%;
+    height: fit-content;
  }
  .Image{
    width: 100%;
-   align-self: flex-start;
    object-fit: cover;
    border-radius: 0.75rem 0.75rem 0rem 0rem;
    
  }
- .contents{
+
+/* Content section */
+.contents {
     display: flex;
     justify-content: center;
     align-items: center;
- }
-/* Descriptions   */
-h1{
-    margin: 0.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
-.welcome{
-    padding:0rem 1.5rem 0rem 1.25rem;
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900; /* Boldest for headings */
+    color: hsl(223, 47%, 23%);
+    margin: 0.5rem 0;
+}
+h1 {
+    font-size: 1.5rem; /* Example size for h1 */
+}
+h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+/* Welcome text */
+.welcome {
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: hsl(224, 23%, 55%); /* Desaturated blue for secondary text */
 }
- /* plan */
+
+/* Plan section */
 .audioCrd{
-    background-color: antiquewhite;
+    background-color: hsl(225, 100%, 94%); /* Pale blue */
     padding: 1.25rem;
     display: flex;
     justify-content: center;   
     width: 100%;    
+    border-radius: 0.5rem;
+    margin: 1rem 0;
 }
 .audIcon{
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
     gap: 1.75rem;
 }
 
 .myPlan{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;  
+    align-items: flex-start;
+    gap: 0.25rem;
 }
 .change{
-    text-align: end;   
+    text-align: end;
+    color: hsl(245, 75%, 52%); /* Bright blue for links */
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-/* Options */
+/* Options (buttons) */
 .options{
     display: flex;
     flex-direction: column;
@@ -84,17 +121,35 @@ h1{
     align-items: center;
     gap:0.75rem;
     padding-bottom: 1.25rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
 }
 .proceed{
     padding: 0.75rem;
-    background-color: blue;
+    background-color: hsl(245, 75%, 52%); /* Bright blue */
     width: 100%;
     text-align: center;
     color: white;
-    padding: 0.5rem 3.5rem 0.5rem 3.5rem;
+    border: none;
+    padding: 0.5rem 3.5rem;
     border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.proceed:hover {
+    background-color: hsl(245, 75%, 60%);
 }
 .cancel{
-    background-color: white;
-    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    border: none;
+    padding: 0.5rem 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
 }
