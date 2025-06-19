@@ -5,51 +5,50 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0; /* Added for full reset */
+    margin: 0;
 }
 
-/* Body styles: background and typography */
 body {
-    background-color: hsl(225, 100%, 94%); /* Changed to Pale blue from style guide */
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensures vertical centering */
+    min-height: 100vh;
     padding: 2.5rem;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 16px; /* Paragraph size from style guide */
-    font-weight: 500; /* Default weight */
-    color: hsl(223, 47%, 23%); /* Dark blue for text */
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(223, 47%, 23%);
 }
 
-/* The card*/
 .card{
-    background-color: hsl(225, 100%, 98%); /* Very pale blue */
+    background-color: hsl(225, 100%, 98%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 360px;
-    border-radius: 0.75rem ;
-    box-shadow: 0 8px 24px hsla(223, 47%, 23%, 0.08); /* Subtle shadow */
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px hsla(223, 47%, 23%, 0.08);
     overflow: hidden;
 }
 
-/* Image section*/
 .imgCard{
     width: 100%;
     height: fit-content;
- }
- .Image{
-   width: 100%;
-   object-fit: cover;
-   border-radius: 0.75rem 0.75rem 0rem 0rem;
-   
- }
+}
+.Image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.75rem 0.75rem 0 0;
+}
 
-/* Content section */
 .contents {
     display: flex;
     justify-content: center;
@@ -57,22 +56,20 @@ body {
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Red Hat Display', sans-serif;
-    font-weight: 900; /* Boldest for headings */
+    font-weight: 900;
     color: hsl(223, 47%, 23%);
     margin: 0.5rem 0;
 }
 h1 {
-    font-size: 1.5rem; /* Example size for h1 */
+    font-size: 1.5rem;
 }
 h2 {
     font-size: 1.125rem;
     font-weight: 700;
 }
 
-/* Welcome text */
 .welcome {
     padding: 0 1.5rem;
     display: flex;
@@ -80,16 +77,15 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: hsl(224, 23%, 55%); /* Desaturated blue for secondary text */
+    color: hsl(224, 23%, 55%);
 }
 
-/* Plan section */
 .audioCrd{
-    background-color: hsl(225, 100%, 94%); /* Pale blue */
+    background-color: hsl(225, 100%, 94%);
     padding: 1.25rem;
     display: flex;
-    justify-content: center;   
-    width: 100%;    
+    justify-content: center;
+    width: 100%;
     border-radius: 0.5rem;
     margin: 1rem 0;
 }
@@ -107,26 +103,25 @@ h2 {
 }
 .change{
     text-align: end;
-    color: hsl(245, 75%, 52%); /* Bright blue for links */
+    color: hsl(245, 75%, 52%);
     font-weight: 700;
     cursor: pointer;
     text-decoration: underline;
 }
 
-/* Options (buttons) */
 .options{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:0.75rem;
+    gap: 0.75rem;
     padding-bottom: 1.25rem;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
 }
 .proceed{
     padding: 0.75rem;
-    background-color: hsl(245, 75%, 52%); /* Bright blue */
+    background-color: hsl(245, 75%, 52%);
     width: 100%;
     text-align: center;
     color: white;
